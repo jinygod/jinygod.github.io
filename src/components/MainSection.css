@@ -1,0 +1,92 @@
+.main-section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+  margin-top: 200px; 
+  padding: 0 20px; /* 좌우로 20px 패딩추가 */
+}
+
+.main-content {
+  display: flex;
+  gap: 40px;
+  margin-left: 60px; /* 오른쪽으로 이동(왼쪽 여백추가) */
+}
+
+.left-content {
+  flex: 1;
+  text-align: left;
+}
+
+.right-content {
+  flex: 1;
+}
+
+.right-content img {
+  width: 300px;
+  height: auto;
+}
+
+.left-content h2 {
+  font-size: 3em;
+}
+
+  
+  .main-content {
+    display: flex;
+    gap: 40px;
+  }
+  
+  .left-content {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .right-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  
+  .right-content img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .left-content h2 {
+    font-size: 3em; /* 글자 크기 2배로 설정 */
+  }
+  
+  .icon{
+    font-size: 40px;
+    margin-bottom: 40px;
+  }
+
+  .github-icon{
+    font-size:32px;
+    transition:none;
+  }
+
+  .tech-stack {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap; /* 줄바꿈하지 않고 한 줄로 유지 */
+    gap: 10px;
+    margin-top: 20px;
+    width: 100%;
+    overflow-x: auto; /* 가로 스크롤을 추가하여 넘치는 경우 스크롤 가능 */
+  }
+
+  
+.tech-stack h3 {
+  font-size: 2rem; /* Tech Stack 텍스트의 크기 설정 */
+  margin-right: 10px; /* 아이콘과의 간격 조정 */
+}
+  
+  .tech-stack .icon {
+    flex: none; /* 아이콘의 크기 조정을 위해 flex 속성 해제 */
+    font-size: 2rem; /* 아이콘 크기 설정 */
+  }
