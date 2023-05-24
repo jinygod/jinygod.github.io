@@ -1,0 +1,50 @@
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .header-left {
+    font-weight: bold;
+    padding: 20px 30px; /* 상하 20px, 좌우 10px */
+    color: #333;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    font-size: 2rem; /* 글자 크기 두배로 키움 */
+  }
+  
+
+  nav {
+    margin-left: 120px; /* dev.jsj 항목을 제외한 나머지 메뉴들의 왼쪽 여백 조정 */
+  }
+
+  nav ul li:first-child {
+    margin-left: 0;
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  nav ul li {
+    margin: 0;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    background-color: #ccc;
+  }
+  
