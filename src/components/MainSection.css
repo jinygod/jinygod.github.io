@@ -2,10 +2,12 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  height: 100vh;
-  margin-top: 200px; 
-  padding: 0 20px; /* 좌우로 20px 패딩추가 */
+  height: 1000px; /* 세로 크기를 고정값으로 설정 */
+  margin-top: 300px;
+  padding: 0 20px;
+  overflow-y: auto; /* 세로 스크롤바 표시 */
 }
+
 
 .main-content {
   display: flex;

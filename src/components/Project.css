@@ -1,80 +1,55 @@
 .projects-section {
-    padding: 100px 0;
+    padding: 40px;
   }
   
   .timeline {
     position: relative;
-    max-width: 800px;
-    margin: 0 auto;
+    margin-top: 40px;
   }
   
   .timeline:before {
     content: '';
     position: absolute;
     top: 0;
-    bottom: 0;
     left: 50%;
-    margin-left: -2px;
-    width: 4px;
+    width: 2px;
+    height: 100%;
     background-color: #ccc;
+    transform: translateX(-50%);
   }
   
-  .timeline .timeline-item {
-    position: relative;
-    padding: 20px 0;
-  }
-  
-  .timeline .timeline-item-content {
+  .timeline-item {
     display: flex;
-    flex-direction: row;
+    justify-content: flex-start;
     align-items: flex-start;
-    justify-content: space-between;
+    position: relative;
   }
   
-  .timeline .timeline-item-content .project-media {
-    flex: 0 0 40%;
-    margin-right: 30px;
+  .timeline-item-content {
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
   }
   
-  .timeline .timeline-item-content .project-description {
-    flex: 1;
+  .project-media img {
+    width: 200px;
+    height: auto;
   }
   
-  .timeline .timeline-item-content .project-description h3 {
+  .project-description {
+    margin-left: 20px;
+  }
+  
+  .project-description h3 {
     font-size: 1.5rem;
     margin-bottom: 10px;
   }
   
-  .timeline .timeline-item-content .project-description p {
+  .project-description p {
     font-size: 1rem;
-    line-height: 1.5;
   }
-  
-  .timeline .timeline-item:before {
-    content: '';
-    position: absolute;
-    top: 15px;
-    left: -8px;
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    background-color: #ccc;
-  }
-  
-  .timeline .timeline-item:nth-child(even) .timeline-item-content {
-    flex-direction: row-reverse;
-  }
-  
-  @media (max-width: 767px) {
-    .timeline .timeline-item-content {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .timeline .timeline-item-content .project-media {
-      flex: 0 0 60%;
-      margin-right: 0;
-      margin-bottom: 20px;
-    }
+
+  .project-container {
+    grid-row: 3;
   }
   
