@@ -36,3 +36,21 @@
     transform: rotate(360deg);
   }
 }
+
+.container {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
+.header {
+  grid-row: 1;
+}
+
+.main-section {
+  grid-row: 2;
+}
+
+.project {
+  grid-row: 3;
+}
