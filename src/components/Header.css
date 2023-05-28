@@ -9,10 +9,16 @@
   width: 100%;
   background-color: #fff;
   z-index: 999;
+  transition: background-color 0.3s ease;
 }
 
-.header-ul{
+.header.sticky {
+  background-color: #f5f5f5;
+}
+
+.header-ul {
   margin-right: 50px;
+  margin-top: 38px;
 }
 
 .header-left {

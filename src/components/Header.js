@@ -24,7 +24,7 @@ function Header() {
     <header className={isSticky ? 'header sticky' : 'header'}>
       <a href="#" className="header-left">jsj.dev</a>
       <nav>
-        <ul className = "header-ul">
+        <ul className="header-ul">
           <li><a href="#about">About</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#skills">Skills</a></li>

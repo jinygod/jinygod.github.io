@@ -4,12 +4,6 @@
   min-height: 100vh;
 }
 
-.grid {
-  display: grid;
-  grid-template-rows: auto auto;
-  gap: 20px;
-}
-
 .header {
   grid-row: 1;
 }
