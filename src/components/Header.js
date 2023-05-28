@@ -20,13 +20,20 @@ function Header() {
     };
   }, []);
 
+  const handleProjectClick = () => {
+    const projectSection = document.getElementById('projects');
+    if (projectSection) {
+      projectSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <header className={isSticky ? 'header sticky' : 'header'}>
       <a href="#" className="header-left">jsj.dev</a>
       <nav>
         <ul className="header-ul">
           <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
+          <li><a href="#projects" onClick={handleProjectClick}>Projects</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#contact">Contact</a></li>
