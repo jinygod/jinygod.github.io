@@ -34,7 +34,7 @@ function ProjectSection() {
           - 메인 페이지 구현<br/>
           - 회원가입 / 로그인 / 공지사항 / 상품 리스트 구현<br/>
           - 상품 및 게시글 CRUD 구현<br/>
-          - 상품 상세페이지 구현(구매하기, 장바구니, 수량에    따른 가격 증가)<br/>
+          - 상품 상세페이지 구현(구매하기, 장바구니, 수량에 따른 가격 증가)<br/>
           - GitHub 레포지토리 전체 관리<br/>
           - 팀원들의 Git Conflict 해결<br/>
           <a href = "https://github.com/jinygod/peonyshop">GitHub Link</a>
