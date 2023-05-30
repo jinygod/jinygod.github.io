@@ -1,7 +1,7 @@
 import React from 'react';
-import './Project.css';
+import './ProjectSection.css';
 
-function Project() {
+function ProjectSection() {
   return (
     <div className = 'project'>
       <ul>
@@ -60,4 +60,4 @@ function Project() {
   );
 }
 
-export default Project;
+export default ProjectSection;
