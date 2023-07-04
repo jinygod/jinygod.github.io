@@ -1,3 +1,7 @@
+html{
+  scroll-behavior: smooth;
+}
+
 .container {
   display: grid;
   grid-template-rows: auto auto 1fr;

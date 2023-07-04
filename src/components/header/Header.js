@@ -20,10 +20,11 @@ function Header() {
     };
   }, []);
 
-  const handleProjectClick = () => {
-    const projectSection = document.getElementById('projects');
-    if (projectSection) {
-      projectSection.scrollIntoView({ behavior: 'smooth' });
+  const handleNavLinkClick = (event, sectionId) => {
+    event.preventDefault();
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
     }
   };
 
@@ -32,11 +33,11 @@ function Header() {
       <a href="#" className="header-left">jsj.dev</a>
       <nav>
         <ul className="header-ul">
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects" onClick={handleProjectClick}>Projects</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#about" onClick={(event) => handleNavLinkClick(event, 'about')}>About</a></li>
+          <li><a href="#projects" onClick={(event) => handleNavLinkClick(event, 'projects')}>Projects</a></li>
+          <li><a href="#skills" onClick={(event) => handleNavLinkClick(event, 'skills')}>Skills</a></li>
+          <li><a href="#experience" onClick={(event) => handleNavLinkClick(event, 'experience')}>Experience</a></li>
+          <li><a href="#contact" onClick={(event) => handleNavLinkClick(event, 'contact')}>Contact</a></li>
         </ul>
       </nav>
     </header>
